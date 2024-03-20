@@ -177,12 +177,14 @@ public class Model extends Observable {
                             //对比值，相同则合并，并加分
                             if(t.value() == board.tile(c,r+emptyTile + 1).value()){
                                 board.move(c,r + emptyTile +1,t);
-                                score += 2 * t.value();
                                 changed = true;
+                                score += 2 * t.value();
+
                                 //进行合并操作，mergedAlready设定为1
                                 mergedAlready = 1;
                                 //因为进行合并操作，说明已经遍历过两个非空tile了，设定canMove为0， 用于 2/2/4/0 例子
                                 canMerge = 0;
+
                             }
                             //若值不同,若上方有null则可以move，若没有则不需要
                             else{
@@ -205,9 +207,11 @@ public class Model extends Observable {
                             if(canMerge == 0){
                                 //因为合并产生null，row 多+1
                                 board.move(c,r+emptyTile+1,t);
+                                changed = true;
+
                                 //重新设定为1
                                 canMerge = 1;
-                                changed = true;
+
                             }
                             // 能进行合并操作，所以进行值得对比，相同则合并，不同则move到null处
                             else{
@@ -216,6 +220,12 @@ public class Model extends Observable {
                                     score += 2 * t.value();
                                     mergedAlready = 1;
                                     canMerge = 0;
+                                    changed = true;
+                                }
+                                //move
+                                else {
+                                    board.move(c,r+emptyTile +1,t);
+                                    canMerge = 1;
                                     changed = true;
                                 }
                             }

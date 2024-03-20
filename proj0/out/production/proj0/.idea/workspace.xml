@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f21eb342-f512-456c-8f5e-2542e3ad522d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/game2048/GUISource.java" beforeDir="false" afterPath="$PROJECT_DIR$/game2048/GUISource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game2048/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/game2048/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game2048/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/game2048/Tile.java" afterDir="false" />
-    </list>
+    <list default="true" id="f21eb342-f512-456c-8f5e-2542e3ad522d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +34,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.TestUpOnly.testUpNoMerge">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="game2048.Main" />
       <module name="proj0" />
@@ -63,6 +59,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestModel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="game2048.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="game2048" />
+      <option name="MAIN_CLASS_NAME" value="game2048.TestModel" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestModel.testMultipleMoves3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="game2048.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="game2048" />
+      <option name="MAIN_CLASS_NAME" value="game2048.TestModel" />
+      <option name="METHOD_NAME" value="testMultipleMoves3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestUpOnly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj0" />
       <extension name="coverage">
@@ -78,7 +105,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestUpOnly.testUpBasicMerge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUpOnly.testUpTrickyMerge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj0" />
       <extension name="coverage">
         <pattern>
@@ -88,39 +115,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="game2048" />
       <option name="MAIN_CLASS_NAME" value="game2048.TestUpOnly" />
-      <option name="METHOD_NAME" value="testUpBasicMerge" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestUpOnly.testUpNoMerge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="proj0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="game2048.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="game2048" />
-      <option name="MAIN_CLASS_NAME" value="game2048.TestUpOnly" />
-      <option name="METHOD_NAME" value="testUpNoMerge" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestUpOnly.testUpTripleMerge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="proj0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="game2048.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="game2048" />
-      <option name="MAIN_CLASS_NAME" value="game2048.TestUpOnly" />
-      <option name="METHOD_NAME" value="testUpTripleMerge" />
+      <option name="METHOD_NAME" value="testUpTrickyMerge" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestUpOnly.testUpNoMerge" />
-        <item itemvalue="JUnit.TestUpOnly.testUpBasicMerge" />
-        <item itemvalue="JUnit.TestUpOnly.testUpTripleMerge" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TestModel" />
+        <item itemvalue="JUnit.TestModel.testMultipleMoves3" />
         <item itemvalue="JUnit.TestUpOnly" />
+        <item itemvalue="JUnit.TestUpOnly.testUpTrickyMerge" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +143,8 @@
       <workItem from="1710668570438" duration="9258000" />
       <workItem from="1710744815201" duration="17826000" />
       <workItem from="1710829935956" duration="4947000" />
-      <workItem from="1710843730485" duration="1730000" />
+      <workItem from="1710843730485" duration="8908000" />
+      <workItem from="1710854483714" duration="868000" />
     </task>
     <servers />
   </component>
